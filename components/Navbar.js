@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import { useState } from 'react';
+import ThemeToggle from './ThemeToggle';
 
 export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -37,6 +38,7 @@ export default function Navbar() {
             Contacto
           </a>
         </Link>
+        <ThemeToggle />
       </nav>
 
       {/* Botón menú móvil */}
@@ -89,6 +91,8 @@ export default function Navbar() {
               Contacto
             </a>
           </Link>
+          {/* Aquí también el toggle */}
+          <ThemeToggle />
         </nav>
       )}
     </header>
